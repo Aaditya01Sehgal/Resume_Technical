@@ -1,0 +1,216 @@
+%-------------------------
+% Resume in Latex
+% Author : Aaditya Kumar
+% Based off of: https://github.com/Aaditya01Sehgal/Resume_Technical
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins to fit on one page
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-.85in} % Moved up slightly more
+\addtolength{\textheight}{1.6in} % Extended text height
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - tighter spacing
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}} % Reduced item spacing
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Aaditya Kumar}\\ \vspace{2pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-9870713324 ~ \href{mailto:aadityakumar06072003@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{aadityakumar06072003@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/aaditya01sehgal/}{\raisebox{-0.2\height}\faLinkedin\ \underline{aaditya01sehgal}}  ~
+    \href{https://github.com/Aaditya01Sehgal}{\raisebox{-0.2\height}\faGithub\ \underline{Aaditya01Sehgal}}
+    \vspace{-10pt} % Tighter space under header
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Motilal Nehru National Institute of Technology Allahabad}{August 2024 -- Present}
+      {Master of Computer Applications, CPI: 8.18}{Prayagraj, Uttar Pradesh}
+    \resumeSubheading
+      {Maa Shakumbhari University Saharanpur}{August 2021 -- May 2024}
+      {Bachelor of Science, CGPA: 7.15}{Saharanpur, Uttar Pradesh}
+    \resumeSubheading
+      {Maharishi Dayanand Inter College Doodhli Muzaffarnagar}{April 2019 -- March 2020}
+      {Class XII (UPMSP), Percentage: 75.20}{Muzaffarnagar, Uttar Pradesh}
+    \resumeSubheading
+      {Maharishi Dayanand Inter College Doodhli Muzaffarnagar}{April 2017 -- March 2018}
+      {Class X (UPMSP), Percentage: 74.17}{Muzaffarnagar, Uttar Pradesh}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/Badbozs/BadalRoop}{\textbf{BADALROOP} \faGithub\ }$|$ \emph{Electron.js, React.js, Spring Boot}}{September -- October 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a desktop-based file conversion tool supporting 4 major categories (documents, spreadsheets, presentations, images) and over 15+ file formats.}
+            \resumeItem{Designed an offline-first architecture, ensuring 100\% data privacy and reducing conversion latency by approximately 40\% compared to web-only tools.}
+            \resumeItem{Built a React-based UI that simplified complex conversions, enabling users to process bulk files in under 3 clicks and boosting operational efficiency by 30\%.}
+          \resumeItemListEnd
+          \vspace{-14pt} % Tighter spacing between projects
+          
+      \resumeProjectHeading
+          {\href{https://github.com/Aaditya01Sehgal/CalmQuest}{\textbf{CALMQUEST} \faGithub\ }$|$ \emph{React.js, TypeScript, Spring Boot, PostgreSQL, Gemini API}}{January -- March 2026}
+          \resumeItemListStart
+            \resumeItem{Built an AI-powered wellness platform integrating Google Gemini to process queries and generate automated reports for 3 standardized mental health assessments.}
+            \resumeItem{Implemented real-time facial emotion detection with over 90\% accuracy using face-api.js and enabled seamless video consultations with sub-second latency via Jitsi.}
+            \resumeItem{Engineered a Spring Boot backend managing 4 distinct user roles, optimizing over 15+ REST API endpoints, and securing data management with JWT + OAuth2.}
+          \resumeItemListEnd 
+          \vspace{-14pt}
+          
+      \resumeProjectHeading
+          {\href{https://github.com/AlgoCoder12/CodeRadar}{\textbf{CODERADAR} \faGithub\ }$|$ \emph{Spring Boot, React.js, MongoDB, JWT, REST APIs}}{May -- August 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack application using ReactJS and Spring Boot to consolidate coding data from 3 major platforms, tracking progress across 500+ algorithmic problems.}
+            \resumeItem{Integrated official REST APIs and custom scrapers with MongoDB caching, achieving a 99.9\% real-time sync rate and decreasing data retrieval load times by 60\%.}
+            \resumeItem{Engineered an automated notification system dispatching 100+ weekly email reminders and seamless Google Calendar syncs, boosting user engagement and daily active usage by 35\%.}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    \setlength{\columnsep}{-15pt}
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-3pt, parsep=3pt]
+                \item\small Data Structures and Algorithms
+                \item Operating System
+                \item Database Management System
+                \item Computer Networks
+                \item Object Oriented Programming System 
+                \item Software Engineering
+            \end{itemize}
+        \end{multicols}
+        \vspace*{1.5\multicolsep} % Reduced space
+\vspace{2pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{:~~~~ Java, C, Python, SQL} \\ \vspace{2pt}
+     \textbf{Development}{: React.js, Spring Boot,  Tailwind CSS, MongoDB, SQL, HTML, React.js, LaTeX, Git} \\ \vspace{2pt}
+     \textbf{Other Skills}{:~~~Competitive Programming, Git, GitHub, REST APIs, Postman, Full-Stack Web Development} \\ \vspace{2pt}
+     \textbf{Soft Skills}{:~~~~ Teamwork, Leadership, Management} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+%-----------ACHIEVEMENTS---------------
+%-----------ACHIEVEMENTS---------------
+\section{Achievements and Activities}
+\begin{itemize}[leftmargin=0.15in, label={$\vcenter{\hbox{\tiny$\bullet$}}$}, itemsep=-2pt] 
+    \small{\item{\textbf{Secured Rank 24 in OPC April}: A preliminary round for the Hack36 hackathon, competing among 500+ teams.}}
+    \small{\item{\textbf{Earned the Knight title on LeetCode} with a peak rating of 1918, ranking in the top 2\% globally.}}
+    \small{\item{\textbf{Attained Specialist rank on Codeforces} with a maximum rating of 1426, placing in the top 20\% globally.}}
+    \small{\item{\textbf{Ranked 58th} in CodeStart 8.0, the annual programming contest conducted locally by MNNIT Allahabad.}}
+    \small{\item{\textbf{Placed in the Top 120} in the JEECUP state-level engineering entrance exam out of over 300,000+ candidates.}}
+\end{itemize}
+\vspace{-8pt}
+%-----------CODING PROFILES-----------
+\section{Coding Profiles}
+\vspace{-2pt} 
+\begin{center}
+\begin{tabularx}{\textwidth}{X X X}
+\href{https://leetcode.com/u/xoder_xp/}{LeetCode: Aaditya01Sehgal} &
+\href{https://codeforces.com/profile/Aaditya01sehgal}{Codeforces: Aaditya01sehgal} &
+\href{https://www.geeksforgeeks.org/profile/aadityasesqu9}{GeeksforGeeks: Aaditya01Sehgal} \\
+\end{tabularx}
+\end{center}
+\vspace{-7pt}
+
+\end{document}
